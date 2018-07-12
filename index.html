@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grill Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="grillguide.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app="GrillGuide" ng-controller="GuideController">
+{{demo}}
+
+<table>
+  <tr>
+    <th>Type of Meat</th>
+    <th>Smoke Temperture</th>
+    <th>Target Interal Temperature</th>
+    <th>USDA Min</th>
+    <th>Recommendations</th>
+  </tr>
+  <tr ng-repeat="x in myData">
+    <td>{{ x.Typeofmeat }}</td>
+    <td>{{ x.Temperatureofsmoking }}</td>
+    <td>{{ x.Targetinternaltemerature }}</td>
+    <td>{{ x.USDAmin }}</td>
+    <td>{{ x.Recommendations }}</td>
+  </tr>
+</table>
+<hr>
+<table>
+  <tr>
+    <th>Wood Type</th>
+    <th>Flavor Strenth</th>
+    <th>Flavor Profile</th>
+    <th>Pork</th>
+    <th>Ribs</th>
+    <th>Beef</th>
+    <th>Chicken</th>
+    <th>Turkey</th>
+    <th>Fish</th>
+  </tr>
+  <tr ng-repeat="w in woodData">
+    <td>{{ w.WoodType }}</td>
+    <td>{{ w.Flavor }}</td>
+    <td>{{ w.Profile }}</td>
+    <td>{{ w.Pork }}</td>
+    <td>{{ w.Ribs }}</td>
+    <td>{{ w.Beef }}</td>
+    <td>{{ w.Chicken }}</td>
+    <td>{{ w.Turkey }}</td>
+    <td>{{ w.Fish }}</td>
+  </ng-repeat>
+  </tr>
+</table>
+
+</body>
+</html>

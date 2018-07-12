@@ -1,0 +1,133 @@
+{
+  "meats": [
+    {
+      "Typeofmeat": "Pork Butt/Shoulder",
+      "Temperatureofsmoking": "225-275ºF",
+      "Targetinternaltemerature": "195-205ºF",
+      "USDAmin": "145ºF",
+      "Recommendations": "Cook until the meat becomes tender, nearly 1.5 hours per pound"
+    },
+    {
+      "Typeofmeat": "Tender Loin Pork",
+      "Temperatureofsmoking": "225-325ºF",
+      "Targetinternaltemerature": "145-150ºF",
+      "USDAmin": "145ºF",
+      "Recommendations": "To help keep it from drying out, wrap it in a bacon weave"
+    },
+    {
+      "Typeofmeat": "Pork Ribs",
+      "Temperatureofsmoking": "225-275ºF",
+      "Targetinternaltemerature": "195-205ºF",
+      "USDAmin": "145ºF",
+      "Recommendations": "First remove the think membrane on the bone side"
+    },
+    {
+      "Typeofmeat": "Beef Brisket",
+      "Temperatureofsmoking": "225-275ºF",
+      "Targetinternaltemerature": "195-215ºF",
+      "USDAmin": "145ºF",
+      "Recommendations": "For smoking time estimate approximately 1.5 hours per pound"
+    },
+    {
+      "Typeofmeat": "Chicken",
+      "Temperatureofsmoking": "250-300ºF",
+      "Targetinternaltemerature": "165ºF",
+      "USDAmin": "165ºF",
+      "Recommendations": "To crisp the skin finish off over high heat 325ºF for 20 minutes"
+    },
+    {
+      "Typeofmeat": "Turkey",
+      "Temperatureofsmoking": "250-300ºF",
+      "Targetinternaltemerature": "165ºF",
+      "USDAmin": "165ºF",
+      "Recommendations": "For maximum moisture, brine for 24 hours"
+    },
+    {
+      "Typeofmeat": "Fish",
+      "Temperatureofsmoking": "225-250ºF",
+      "Targetinternaltemerature": "145ºF",
+      "USDAmin": "145ºF",
+      "Recommendations": "Fatter fish like Salmon and Trout absorb smoke faster"
+    }
+  ],
+
+  "woods": [
+    {
+      "WoodType":"Alder",
+      "Flavor":"Mild",
+      "Profile":"Sweet and spicy smoke",
+      "Pork":"No",
+      "Ribs":"No",
+      "Beef":"No",
+      "Chicken":"Yes",
+      "Turkey":"Yes",
+      "Fish":"Best"
+    },
+    {
+      "WoodType":"Almond",
+      "Flavor":"Medium",
+      "Profile":"Nutty and sweet, little ash",
+      "Pork":"Yes",
+      "Ribs":"Yes",
+      "Beef":"Yes",
+      "Chicken":"Yes",
+      "Turkey":"Yes",
+      "Fish":"Yes"
+    },
+    {
+      "WoodType":"Apple",
+      "Flavor":"Mild",
+      "Profile":"Sweet, fruity",
+      "Pork":"Best",
+      "Ribs":"Best",
+      "Beef":"Yes",
+      "Chicken":"Best",
+      "Turkey":"Yes",
+      "Fish":"No"
+    },
+    {
+      "WoodType":"Apricot",
+      "Flavor":"Mild",
+      "Profile":"A little of sweetness and fruitiness",
+      "Pork":"Yes",
+      "Ribs":"Yes",
+      "Beef":"Yes",
+      "Chicken":"Yes",
+      "Turkey":"Yes",
+      "Fish":"Yes"
+    },
+    {
+      "WoodType":"Cherry",
+      "Flavor":"Mild",
+      "Profile":"Fairly sweet and fruity",
+      "Pork":"Best",
+      "Ribs":"Best",
+      "Beef":"Yes",
+      "Chicken":"Best",
+      "Turkey":"Yes",
+      "Fish":"Yes"
+    },
+    {
+      "WoodType":"Chestnut",
+      "Flavor":"Mild",
+      "Profile":"Ligh sweet and nutty smoke flavor",
+      "Pork":"Yes",
+      "Ribs":"Yes",
+      "Beef":"Yes",
+      "Chicken":"Yes",
+      "Turkey":"Yes",
+      "Fish":"Yes"
+    },
+    {
+      "WoodType":"Hickory",
+      "Flavor":"Strong",
+      "Profile":"Very sweet with heavy bacon flavor",
+      "Pork":"Best",
+      "Ribs":"Best",
+      "Beef":"Best",
+      "Chicken":"Yes",
+      "Turkey":"Yes",
+      "Fish":"Yes"
+    }
+  ]
+}
