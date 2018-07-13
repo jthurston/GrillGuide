@@ -1,5 +1,72 @@
 {
-  "meats": [
+  "meattemps": [
+    {
+      "doneness": "Beef, Lamb, Vension (Rare)",
+      "internaltemp": "110-120ºF",
+      "tips": "Use a thermometer to check doneness, place it in the thickest part of the meat away from the bone"
+    },
+    {
+      "doneness": "Beef, Lamb, Vension (Medium Rare)",
+      "internaltemp": "120-130ºF",
+      "tips": "Stop cooking at an internal temperature yoru desired interinal temperature, because the internal temperature may raise by 5-10 degree"
+    },
+    {
+      "doneness": "Beef, Lamb, Vension (Medium)",
+      "internaltemp": "130-135ºF",
+      "tips": "Cook until the meat becomes tender, nearly 1.5 hours per pound"
+    },
+    {
+      "doneness": "Beef, Lamb, Vension (Medium Well)",
+      "internaltemp": "135-145ºF",
+      "tips": "Cook until the meat becomes tender, nearly 1.5 hours per pound"
+    },
+    {
+      "doneness": "Beef, Lamb, Vension (Well Done)",
+      "internaltemp": "145-155ºF",
+      "tips": "Cook until the meat becomes tender, nearly 1.5 hours per pound"
+    },
+    {
+      "doneness": "Pork, Veal (Rare)",
+      "internaltemp": "120-130ºF",
+      "tips": "Avoid freezing if possible to eliminate moisture loss during thawing"
+    },
+    {
+      "doneness": "Pork, Veal (Medium Rare)",
+      "internaltemp": "130-135ºF",
+      "tips": "Cutting meat across the grain produce shorter fibers & more tender meat"
+    },
+    {
+      "doneness": "Pork, Veal (Medium)",
+      "internaltemp": "135-145ºF",
+      "tips": "Cubes: Great for making kabobs, stew & chili"
+    },
+    {
+      "doneness": "Pork, Veal (Medium Well)",
+      "internaltemp": "145-155ºF",
+      "tips": "Thicker cuts of meat are more strongly impacted by corry-over cooking"
+    },
+    {
+      "doneness": "Pork, Veal (Well Done)",
+      "internaltemp": "155-170ºF",
+      "tips": "Cutlets: Perfect for making sandwiches"
+    },
+    {
+      "doneness": "Fish (Medium)",
+      "internaltemp": "130-145ºF",
+      "tips": "Fish is finished when it has a slightly translucent color or flake easily"
+    },
+    {
+      "doneness": "Chicken Turkey (Medium)",
+      "internaltemp": "165ºF",
+      "tips": "When cooking whole birds, foil wings and legs to prevent over cooking"
+    },
+    {
+      "doneness": "Ground Meats, Burgers, Meat Loaf, Saugages (Medium)",
+      "internaltemp": "155-175ºF",
+      "tips": "Cook until the meat becomes tender, nearly 1.5 hours per pound"
+    }
+  ],
+  "meatsmokes": [
     {
       "Typeofmeat": "Pork Butt/Shoulder",
       "Temperatureofsmoking": "225-275ºF",

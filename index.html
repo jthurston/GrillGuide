@@ -6,12 +6,36 @@
   <title>Grill Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="grillguide.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
   <script src="app.js"></script>
 </head>
 <body ng-app="GrillGuide" ng-controller="GuideController">
-{{demo}}
+<h2>{{demo}}</h2>
 
+<hr>
+<h3>Meat Temperature Guide</h3>
+<table>
+  <tr>
+    <th>
+      Doneness
+    </th>
+    <th>
+      Internal Temp.
+    </th>
+    <th>
+      Tips
+    </th>
+  </tr>
+  <tr ng-repeat="y in meattemp">
+    <td>{{ y.doneness }}</td>
+    <td>{{ y.internaltemp }}</td>
+    <td>{{ y.tips }}</td>
+  </tr>
+</table>
+
+<hr>
+<h3>Meat Smoking Guide</h3>
 <table>
   <tr>
     <th>Type of Meat</th>
@@ -28,7 +52,9 @@
     <td>{{ x.Recommendations }}</td>
   </tr>
 </table>
+
 <hr>
+<h3>Wood Guide</h3>
 <table>
   <tr>
     <th>Wood Type</th>
