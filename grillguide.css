@@ -1,8 +1,12 @@
 body {
   font-family: arial;
-  background-color: aliceblue !important;
+  background-color: rgb(55, 57, 58) !important;
+  margin: 5px;
+  padding: 5px;
 }
-
+h2 {
+  color:white !important;
+}
 .ind {
   text-align: center;
 }
