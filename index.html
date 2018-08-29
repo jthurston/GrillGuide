@@ -1,85 +1,154 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Grill Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="grillguide.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
   <script src="app.js"></script>
 </head>
+
 <body ng-app="GrillGuide" ng-controller="GuideController">
-<h2>{{demo}}</h2>
 
-<hr>
-<h3>Meat Temperature Guide</h3>
-<table>
-  <tr>
-    <th>
-      Doneness
-    </th>
-    <th>
-      Internal Temp.
-    </th>
-    <th>
-      Tips
-    </th>
-  </tr>
-  <tr ng-repeat="y in meattemp">
-    <td>{{ y.doneness }}</td>
-    <td>{{ y.internaltemp }}</td>
-    <td>{{ y.tips }}</td>
-  </tr>
-</table>
+  <h2>{{demo}}</h2>
 
-<hr>
-<h3>Meat Smoking Guide</h3>
-<table>
-  <tr>
-    <th>Type of Meat</th>
-    <th>Smoke Temperture</th>
-    <th>Target Interal Temperature</th>
-    <th>USDA Min</th>
-    <th>Recommendations</th>
-  </tr>
-  <tr ng-repeat="x in myData">
-    <td>{{ x.Typeofmeat }}</td>
-    <td>{{ x.Temperatureofsmoking }}</td>
-    <td>{{ x.Targetinternaltemerature }}</td>
-    <td>{{ x.USDAmin }}</td>
-    <td>{{ x.Recommendations }}</td>
-  </tr>
-</table>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      Meat Temps
+    </div>
+    <div class="panel-body">
+      <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Doneness</th>
+            <th scope="col">Internal Temp.</th>
+            <th scope="col">Tips</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="y in meattemp">
+            <td>{{ y.doneness }}</td>
+            <td>{{ y.internaltemp }}</td>
+            <td>{{ y.tips }}</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
 
-<hr>
-<h3>Wood Guide</h3>
-<table>
-  <tr>
-    <th>Wood Type</th>
-    <th>Flavor Strenth</th>
-    <th>Flavor Profile</th>
-    <th>Pork</th>
-    <th>Ribs</th>
-    <th>Beef</th>
-    <th>Chicken</th>
-    <th>Turkey</th>
-    <th>Fish</th>
-  </tr>
-  <tr ng-repeat="w in woodData">
-    <td>{{ w.WoodType }}</td>
-    <td>{{ w.Flavor }}</td>
-    <td>{{ w.Profile }}</td>
-    <td>{{ w.Pork }}</td>
-    <td>{{ w.Ribs }}</td>
-    <td>{{ w.Beef }}</td>
-    <td>{{ w.Chicken }}</td>
-    <td>{{ w.Turkey }}</td>
-    <td>{{ w.Fish }}</td>
-  </ng-repeat>
-  </tr>
-</table>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      Meat Smoking Guide
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Type of Meat</th>
+            <th>Smoke Temperture</th>
+            <th>Target Interal Temperature</th>
+            <th>USDA Min</th>
+            <th>Recommendations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="x in myData">
+            <td>{{ x.Typeofmeat }}</td>
+            <td>{{ x.Temperatureofsmoking }}</td>
+            <td>{{ x.Targetinternaltemerature }}</td>
+            <td>{{ x.USDAmin }}</td>
+            <td>{{ x.Recommendations }}</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
 
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      Wood Guide
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Wood Type</th>
+            <th>Flavor Strenth</th>
+            <th>Flavor Profile</th>
+            <th class="ind">Pork</th>
+            <th class="ind">Ribs</th>
+            <th class="ind">Beef</th>
+            <th class="ind">Chicken</th>
+            <th class="ind">Turkey</th>
+            <th class="ind">Fish</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="w in woodData">
+            <td>{{ w.WoodType }}</td>
+            <td>{{ w.Flavor }}</td>
+            <td>{{ w.Profile }}</td>
+            <td class="ind">
+              <i ng-if="(w.Pork)=='Yes'" class="fas fa-thumbs-up"></i>
+              <i ng-if="(w.Pork)=='No'" class="fas fa-thumbs-down"></i>
+              <i ng-if="(w.Pork)=='Best'" class="fas fa-trophy"></i>
+            </td>
+            <td class="ind">
+              <i ng-if="(w.Ribs)=='Yes'" class="fas fa-thumbs-up"></i>
+              <i ng-if="(w.Ribs)=='No'" class="fas fa-thumbs-down"></i>
+              <i ng-if="(w.Ribs)=='Best'" class="fas fa-trophy"></i>
+            </td>
+            <td class="ind">
+              <i ng-if="(w.Beef)=='Yes'" class="fas fa-thumbs-up"></i>
+              <i ng-if="(w.Beef)=='No'" class="fas fa-thumbs-down"></i>
+              <i ng-if="(w.Beef)=='Best'" class="fas fa-trophy"></i>
+            </td>
+            <td class="ind">
+              <i ng-if="(w.Chicken)=='Yes'" class="fas fa-thumbs-up"></i>
+              <i ng-if="(w.Chicken)=='No'" class="fas fa-thumbs-down"></i>
+              <i ng-if="(w.Chicken)=='Best'" class="fas fa-trophy"></i>
+            </td>
+            <td class="ind">
+              <i ng-if="(w.Turkey)=='Yes'" class="fas fa-thumbs-up"></i>
+              <i ng-if="(w.Turkey)=='No'" class="fas fa-thumbs-down"></i>
+              <i ng-if="(w.Turkey)=='Best'" class="fas fa-trophy"></i>
+            </td>
+            <td class="ind">
+              <i ng-if="(w.Fish)=='Yes'" class="fas fa-thumbs-up"></i>
+              <i ng-if="(w.Fish)=='No'" class="fas fa-thumbs-down"></i>
+              <i ng-if="(w.Fish)=='Best'" class="fas fa-trophy"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </body>
 </html>

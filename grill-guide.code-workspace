@@ -4,5 +4,8 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"eslint.enable": false,
+		"jshint.enable": false
+	}
 }
